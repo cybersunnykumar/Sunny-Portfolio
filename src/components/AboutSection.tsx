@@ -1,5 +1,5 @@
 import { Code2, Shield, Terminal, Network, Monitor, Bug, FileSearch, Activity, Laptop } from 'lucide-react';
-import profileImage from '@/assets/sunny-profile.jpg';
+import profileImage from '@/assets/sunny-new.jpg';
 
 const AboutSection = () => {
   const skills = [
