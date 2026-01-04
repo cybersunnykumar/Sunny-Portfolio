@@ -12,11 +12,14 @@ import MatrixRain from '@/components/MatrixRain';
 const Index = () => {
   useEffect(() => {
     // SEO Meta Tags
-    document.title = 'Sunny Kumar | Python Developer & Cybersecurity Enthusiast';
+    document.title = 'Sunny Kumar | SOC Analyst (L1)';
     
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Portfolio of Sunny Kumar - A skilled Python developer and cybersecurity enthusiast specializing in Django, REST APIs, and data analysis.');
+      metaDescription.setAttribute(
+        'content',
+        'Portfolio of Sunny Kumar — entry-level SOC Analyst (L1) focused on security monitoring, log analysis, incident triage, and Blue Team fundamentals.'
+      );
     }
   }, []);
 

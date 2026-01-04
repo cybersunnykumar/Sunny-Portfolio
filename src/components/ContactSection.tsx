@@ -1,4 +1,4 @@
-import { Mail, Phone, Linkedin, MapPin, Download } from 'lucide-react';
+import { Mail, Phone, Linkedin, MapPin, Download, Github } from 'lucide-react';
 
 const ContactSection = () => {
   const contactInfo = [
@@ -7,6 +7,12 @@ const ContactSection = () => {
       label: 'Phone',
       value: '+91-9173399018',
       href: 'tel:+919173399018',
+    },
+    {
+      icon: Github,
+      label: 'GitHub',
+      value: 'github.com/sunnykumar8905',
+      href: 'https://github.com/sunnykumar8905',
     },
     {
       icon: Mail,
@@ -23,7 +29,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Gujarat, India',
+      value: 'Surat, Gujarat, India',
       href: null,
     },
   ];
@@ -44,7 +50,7 @@ const ContactSection = () => {
             Get In <span className="text-gradient">Touch</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
-            Have a project in mind or want to collaborate? Feel free to reach out!
+            Open to SOC Analyst (L1) opportunities and Blue Team roles — feel free to reach out.
           </p>
         </div>
 

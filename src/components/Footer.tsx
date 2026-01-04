@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="flex items-center gap-2">
             <Shield className="w-5 h-5 text-primary" />
             <span className="font-display font-bold text-sm tracking-wider text-primary">
-              Sunny<span className="text-secondary"> Hacks</span>
+              Sunny<span className="text-secondary"> Kumar</span>
             </span>
           </div>
 

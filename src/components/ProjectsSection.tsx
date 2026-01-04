@@ -1,11 +1,11 @@
-import { ExternalLink, Github, Folder } from 'lucide-react';
+import { Folder } from 'lucide-react';
 
 const ProjectsSection = () => {
   const projects = [
     {
-      title: 'Gender Equality Data Analysis',
-      description: 'Analyzed gender equality data using Python, applying Pandas and Seaborn for visualization. Identified trends in wage gaps and education, developing reports to support data-driven policy decisions on inclusion.',
-      tech: ['Python', 'Pandas', 'Seaborn', 'Data Analysis'],
+      title: 'Hands-On SOC Experience (Home Lab)',
+      description: 'Built a Wazuh SIEM lab to monitor Windows & Linux endpoints; analyzed alerts using MITRE ATT&CK. Investigated phishing indicators with header analysis and VirusTotal, and practiced Blue Team triage/escalation workflows.',
+      tech: ['Wazuh', 'SIEM', 'MITRE ATT&CK', 'Windows', 'Linux'],
       color: 'primary',
     },
     {
@@ -34,34 +34,25 @@ const ProjectsSection = () => {
 
         {/* Projects Grid */}
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="card-cyber p-6 md:p-8 group hover:-translate-y-2 transition-all duration-300"
-            >
+          {projects.map((project, index) => {
+            const titleHoverClass = project.color === 'primary' ? 'group-hover:text-primary' : 'group-hover:text-secondary';
+            const folderColorClass = project.color === 'primary' ? 'text-primary' : 'text-secondary';
+
+            return (
+              <div
+                key={index}
+                className="card-cyber p-6 md:p-8 group hover:-translate-y-2 transition-all duration-300"
+              >
               {/* Header */}
               <div className="flex items-center justify-between mb-6">
-                <Folder className={`w-10 h-10 ${project.color === 'primary' ? 'text-primary' : 'text-secondary'}`} />
+                <Folder className={`w-10 h-10 ${folderColorClass}`} />
                 <div className="flex items-center gap-3">
-                  <a
-                    href="#"
-                    className="p-2 text-muted-foreground hover:text-primary transition-colors"
-                    aria-label="View code on GitHub"
-                  >
-                    <Github className="w-5 h-5" />
-                  </a>
-                  <a
-                    href="#"
-                    className="p-2 text-muted-foreground hover:text-primary transition-colors"
-                    aria-label="View live project"
-                  >
-                    <ExternalLink className="w-5 h-5" />
-                  </a>
+                  <span className="text-xs font-mono text-muted-foreground">Details in description</span>
                 </div>
               </div>
 
               {/* Content */}
-              <h3 className={`text-xl font-display font-semibold mb-3 group-hover:${project.color === 'primary' ? 'text-primary' : 'text-secondary'} transition-colors text-card-foreground`}>
+              <h3 className={`text-xl font-display font-semibold mb-3 transition-colors text-card-foreground ${titleHoverClass}`}>
                 {project.title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed mb-6">
@@ -83,8 +74,9 @@ const ProjectsSection = () => {
                   </span>
                 ))}
               </div>
-            </div>
-          ))}
+              </div>
+            );
+          })}
         </div>
 
         {/* More Projects Indicator */}

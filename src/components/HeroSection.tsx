@@ -3,10 +3,10 @@ import TypeWriter from './TypeWriter';
 
 const HeroSection = () => {
   const roles = [
-    'Cybersecurity Enthusiast',
-    'Python Developer',
-    'Backend Engineer',
-    'Data Analyst',
+    'SOC Analyst (L1)',
+    'Security Monitoring',
+    'Incident Triage',
+    'Blue Team (Defensive)',
   ];
 
   return (
@@ -47,8 +47,8 @@ const HeroSection = () => {
 
           {/* Description */}
           <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed opacity-0 animate-fade-in-up animation-delay-600">
-            Building secure, scalable solutions with Python & Django. 
-            Passionate about network security and data-driven development.
+            Entry-level SOC Analyst (L1) trained in security monitoring, log analysis, and incident triage.
+            Strong foundation in networking, Linux, and defensive security workflows.
           </p>
 
           {/* CTA Buttons */}
@@ -84,7 +84,7 @@ const HeroSection = () => {
               <Linkedin className="w-5 h-5 group-hover:scale-110 transition-transform" />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/sunnykumar8905"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-lg border border-border/50 bg-muted/30 text-muted-foreground hover:text-primary hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 group"

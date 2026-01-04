@@ -1,13 +1,13 @@
-import { Award, ExternalLink, CheckCircle } from 'lucide-react';
+import { Award, CheckCircle } from 'lucide-react';
 
 const CertificationsSection = () => {
   const certifications = [
     {
-      title: 'Advance Diploma in Computer Application (ADCA)',
-      issuer: 'Bharatiya Computer Technology',
-      year: '2024',
-      description: 'Covering MS Office, Tally, DTP, Computer Maintenance, C Language, HTML. Gained strong practical and theoretical skills in office productivity tools, accounting software, and basic programming.',
-      skills: ['MS Office', 'Tally', 'C Language', 'HTML'],
+      title: 'SOC Level 1 Certificate',
+      issuer: 'TryHackMe',
+      year: '2025',
+      description: 'Security monitoring, alert triage, incident response, log analysis, and Blue Team fundamentals with hands-on labs.',
+      skills: ['Security Monitoring', 'Alert Triage', 'Incident Response', 'Log Analysis'],
     },
     {
       title: 'Python Essentials 1 & 2',
@@ -41,7 +41,7 @@ const CertificationsSection = () => {
         </div>
 
         {/* Certifications Grid */}
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {certifications.map((cert, index) => (
             <div
               key={index}

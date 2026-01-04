@@ -51,7 +51,7 @@ const Navbar = () => {
           >
             <Shield className="w-8 h-8 text-primary group-hover:animate-pulse-glow transition-all" />
             <span className="font-display font-bold text-lg tracking-wider text-primary glow-text">
-              Sunny<span className="text-secondary"> Hacks</span>
+              Sunny<span className="text-secondary"> Kumar</span>
             </span>
           </a>
 

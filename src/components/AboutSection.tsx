@@ -1,20 +1,21 @@
-import { Code2, Database, Shield, Terminal, Cpu, Network, FileCode, BarChart3, Globe } from 'lucide-react';
+import { Code2, Shield, Terminal, Network, Monitor, Bug, FileSearch, Activity, Laptop } from 'lucide-react';
 import profileImage from '@/assets/sunny-profile.jpg';
 
 const AboutSection = () => {
   const skills = [
+    { name: 'Security Monitoring', icon: Monitor },
+    { name: 'Alert Triage', icon: Activity },
+    { name: 'Log Analysis', icon: FileSearch },
+    { name: 'Incident Response', icon: Shield },
+    { name: 'Threat Hunting', icon: Bug },
+    { name: 'SIEM (Wazuh)', icon: Terminal },
+    { name: 'Splunk (Basics)', icon: Terminal },
+    { name: 'MITRE ATT&CK', icon: Shield },
+    { name: 'Networking', icon: Network },
+    { name: 'IDS/IPS Concepts', icon: Shield },
+    { name: 'Windows', icon: Laptop },
+    { name: 'Kali Linux', icon: Terminal },
     { name: 'Python', icon: Code2 },
-    { name: 'Django', icon: Terminal },
-    { name: 'REST API', icon: Globe },
-    { name: 'Pandas', icon: BarChart3 },
-    { name: 'NumPy', icon: Cpu },
-    { name: 'Scikit-learn', icon: Database },
-    { name: 'Matplotlib', icon: BarChart3 },
-    { name: 'HTML', icon: FileCode },
-    { name: 'Nmap', icon: Network },
-    { name: 'Network Security', icon: Shield },
-    { name: 'Data Analysis', icon: Database },
-    { name: 'Machine Learning', icon: Cpu },
   ];
 
   return (
@@ -45,7 +46,7 @@ const AboutSection = () => {
                 <div className="relative w-64 h-64 md:w-72 md:h-72 rounded-2xl overflow-hidden border-2 border-primary/50">
                   <img
                     src={profileImage}
-                    alt="Sunny Kumar - Python Developer & Cybersecurity Enthusiast"
+                    alt="Sunny Kumar - SOC Analyst (L1)"
                     className="w-full h-full object-cover object-top"
                   />
                   {/* Overlay */}
@@ -66,19 +67,16 @@ const AboutSection = () => {
               </div>
               <div className="space-y-4 text-card-foreground leading-relaxed">
                 <p>
-                  I am a technically skilled professional with strong knowledge of 
-                  <span className="text-primary font-semibold"> Python, Django, and REST API</span> development. 
-                  Proficient in backend development and automation scripting.
+                  I’m an <span className="text-primary font-semibold">entry-level SOC Analyst (L1)</span> with hands-on training in
+                  Security Operations Center workflows: alert monitoring, log analysis, incident triage, and documentation.
                 </p>
                 <p>
-                  I excel in building <span className="text-secondary font-semibold">efficient, scalable web applications</span>. 
-                  With a B.Sc. in Mathematics, I bring strong analytical and problem-solving abilities 
-                  to every project I work on.
+                  I have a strong foundation in <span className="text-secondary font-semibold">networking, Linux, and Windows</span>, and I’m
+                  comfortable working with SIEM tools and basic Splunk queries for investigation and correlation.
                 </p>
                 <p>
-                  Currently focusing on <span className="text-primary font-semibold">cybersecurity</span> and 
-                  network analysis tools, combining my development skills with security expertise 
-                  to deliver reliable technical solutions.
+                  I also use <span className="text-primary font-semibold">Python</span> for automation and problem-solving, and I’m focused on
+                  building a career in defensive security operations and Blue Team response.
                 </p>
               </div>
             </div>
