@@ -1,5 +1,5 @@
 import { Code2, Shield, Terminal, Network, Monitor, Bug, FileSearch, Activity, Laptop } from 'lucide-react';
-import profileImage from '@/assets/sunny-new.jpg';
+import profileImage from '@/assets/sunny-profile.png';
 
 const AboutSection = () => {
   const skills = [
@@ -38,24 +38,14 @@ const AboutSection = () => {
           <div className="space-y-6">
             {/* Profile Photo */}
             <div className="flex justify-center lg:justify-start">
-              <div className="relative group">
-                {/* Glow Effect */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-primary via-secondary to-primary rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity duration-500" />
-                
-                {/* Image Container */}
-                <div className="relative w-64 h-64 md:w-72 md:h-72 rounded-2xl overflow-hidden border-2 border-primary/50">
+              <div className="relative">
+                <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 overflow-hidden rounded-3xl">
                   <img
                     src={profileImage}
                     alt="Sunny Kumar - SOC Analyst (L1)"
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-contain object-center"
                   />
-                  {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
                 </div>
-
-                {/* Decorative Elements */}
-                <div className="absolute -top-3 -right-3 w-6 h-6 border-t-2 border-r-2 border-primary" />
-                <div className="absolute -bottom-3 -left-3 w-6 h-6 border-b-2 border-l-2 border-secondary" />
               </div>
             </div>
 
