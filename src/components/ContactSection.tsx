@@ -23,8 +23,8 @@ const ContactSection = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/sunnykumar',
-      href: 'https://linkedin.com/in/sunnykumar',
+      value: 'linkedin.com/in/sunny-kumar-a94634275',
+      href: 'https://www.linkedin.com/in/sunny-kumar-a94634275/',
     },
     {
       icon: MapPin,

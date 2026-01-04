@@ -76,7 +76,7 @@ const HeroSection = () => {
           {/* Social Links */}
           <div className="flex items-center justify-center gap-6 opacity-0 animate-fade-in-up animation-delay-800">
             <a
-              href="https://linkedin.com/in/sunnykumar"
+              href="https://www.linkedin.com/in/sunny-kumar-a94634275/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-lg border border-border/50 bg-muted/30 text-muted-foreground hover:text-primary hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 group"
