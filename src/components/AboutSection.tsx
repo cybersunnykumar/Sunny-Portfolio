@@ -39,11 +39,11 @@ const AboutSection = () => {
             {/* Profile Photo */}
             <div className="flex justify-center lg:justify-start">
               <div className="relative">
-                <div className="relative w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96 overflow-hidden rounded-3xl">
+                <div className="relative w-80 h-80 sm:w-96 sm:h-96 md:w-[30rem] md:h-[30rem] overflow-hidden rounded-3xl">
                   <img
                     src={profileImage}
                     alt="Sunny Kumar - SOC Analyst (L1)"
-                    className="w-full h-full object-contain object-center"
+                    className="w-full h-full object-contain object-bottom scale-[2.1]"
                   />
                 </div>
               </div>
