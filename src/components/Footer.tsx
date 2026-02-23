@@ -19,9 +19,7 @@ const Footer = () => {
           <p className="text-sm text-muted-foreground font-mono flex items-center gap-2">
             <span>&copy; {currentYear}</span>
             <span className="text-primary">|</span>
-            <span>Made with</span>
-            <Heart className="w-4 h-4 text-destructive inline animate-pulse" />
-            <span>by Sunny Kumar</span>
+            <span>Sunny Kumar</span>
           </p>
 
           {/* Back to Top */}

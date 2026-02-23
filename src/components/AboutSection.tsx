@@ -1,5 +1,5 @@
 import { Code2, Shield, Terminal, Network, Monitor, Bug, FileSearch, Activity, Laptop } from 'lucide-react';
-import profileImage from '@/assets/sunny-profile.png';
+import profileImage from '@/assets/WhatsApp Image 2026-02-23 at 2.04.57 PM.jpeg';
 
 const AboutSection = () => {
   const skills = [
@@ -43,7 +43,7 @@ const AboutSection = () => {
                   <img
                     src={profileImage}
                     alt="Sunny Kumar - SOC Analyst (L1)"
-                    className="w-full h-full object-contain object-bottom scale-[2.1]"
+                    className="w-full h-full object-cover object-top"
                   />
                 </div>
               </div>

@@ -4,12 +4,7 @@ import sharp from "sharp";
 
 const repoRoot = path.resolve(process.cwd());
 
-const INPUT = path.join(
-  repoRoot,
-  "src",
-  "assets",
-  "Picsart_26-01-04_15-14-59-600.jpg"
-);
+const INPUT = path.join(repoRoot, "src", "assets", "Picsart_26-01-04_15-14-59-600.jpg");
 const OUTPUT = path.join(repoRoot, "src", "assets", "sunny-profile.png");
 
 // How aggressively to remove white background.
