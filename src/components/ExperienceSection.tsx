@@ -17,6 +17,13 @@ const ExperienceSection = () => {
   ];
 
   const education = {
+    degree: 'M.C.A. (Pursuing)',
+    institution: 'Jaipur National University, Jaipur',
+    year: '2024 - 2026',
+    cgpa: 'In Progress',
+  };
+
+  const previousEducation = {
     degree: 'B.Sc. Mathematics',
     institution: 'Atmanand Saraswati Science College, Surat (Gujarat)',
     year: '2023',
@@ -109,12 +116,24 @@ const ExperienceSection = () => {
                 
                 <div className="grid grid-cols-2 gap-4 mt-6">
                   <div className="p-4 rounded-lg bg-muted/30 border border-border/50">
-                    <span className="text-xs text-muted-foreground font-mono block mb-1">GRADUATED</span>
+                    <span className="text-xs text-muted-foreground font-mono block mb-1">PERIOD</span>
                     <span className="text-lg font-semibold text-card-foreground">{education.year}</span>
                   </div>
                   <div className="p-4 rounded-lg bg-muted/30 border border-border/50">
-                    <span className="text-xs text-muted-foreground font-mono block mb-1">CGPA</span>
+                    <span className="text-xs text-muted-foreground font-mono block mb-1">STATUS</span>
                     <span className="text-lg font-semibold text-primary">{education.cgpa}</span>
+                  </div>
+                </div>
+
+                {/* Previous Education */}
+                <div className="mt-6 p-4 rounded-lg bg-muted/10 border border-border/30">
+                  <h5 className="text-lg font-semibold text-card-foreground">{previousEducation.degree}</h5>
+                  <p className="text-muted-foreground font-mono text-sm">{previousEducation.institution}</p>
+                  <div className="mt-3 flex gap-4">
+                    <span className="text-xs text-muted-foreground font-mono">Year:</span>
+                    <span className="font-mono text-sm text-card-foreground">{previousEducation.year}</span>
+                    <span className="text-xs text-muted-foreground font-mono">CGPA:</span>
+                    <span className="font-mono text-sm text-primary">{previousEducation.cgpa}</span>
                   </div>
                 </div>
               </div>
