@@ -2,6 +2,9 @@ import { ChevronDown, Github, Linkedin, Mail, Terminal, Download } from 'lucide-
 import TypeWriter from './TypeWriter';
 
 const HeroSection = () => {
+  const emailAddress = 'sunnykumar9173399018@gmail.com';
+  const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(emailAddress)}`;
+
   const roles = [
     'Cybersecurity Analyst',
     'SOC Operations',
@@ -95,7 +98,9 @@ const HeroSection = () => {
               <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
             </a>
             <a
-              href="mailto:sunnykumar9173399018@gmail.com"
+              href={gmailComposeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-3 rounded-lg border border-border/50 bg-muted/30 text-muted-foreground hover:text-primary hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 group"
             >
               <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />

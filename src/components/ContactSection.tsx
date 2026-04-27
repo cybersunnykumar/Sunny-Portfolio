@@ -1,6 +1,9 @@
 import { Mail, Phone, Linkedin, MapPin, Download, Github } from 'lucide-react';
 
 const ContactSection = () => {
+  const emailAddress = 'sunnykumar9173399018@gmail.com';
+  const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(emailAddress)}`;
+
   const contactInfo = [
     {
       icon: Phone,
@@ -17,8 +20,8 @@ const ContactSection = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'sunnykumar9173399018@gmail.com',
-      href: 'mailto:sunnykumar9173399018@gmail.com',
+      value: emailAddress,
+      href: gmailComposeUrl,
     },
     {
       icon: Linkedin,
@@ -117,7 +120,9 @@ const ContactSection = () => {
                   GitHub Profile
                 </a>
                 <a
-                  href="mailto:sunnykumar9173399018@gmail.com"
+                  href={gmailComposeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-3 py-2 rounded-md border border-border/50 bg-muted/20 text-card-foreground text-sm hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all"
                 >
                   <Mail className="w-4 h-4" />
