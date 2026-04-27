@@ -1,4 +1,4 @@
-import { Folder } from 'lucide-react';
+import { Folder, Github, ExternalLink } from 'lucide-react';
 
 const ProjectsSection = () => {
   const projects = [
@@ -6,12 +6,14 @@ const ProjectsSection = () => {
       title: 'Hands-On SOC Experience (Labs / Home Setup)',
       description: 'Built a Wazuh SIEM lab to monitor Windows and Linux endpoints and analyzed alerts using MITRE ATT&CK techniques. Detected phishing attempts using email header analysis and VirusTotal lookup, investigated brute-force attempts in Windows logs using Splunk queries, and practiced Blue Team response and escalation workflows.',
       tech: ['Wazuh', 'Splunk', 'MITRE ATT&CK', 'Windows Logs', 'Blue Team'],
+      githubUrl: 'https://github.com/cybersunnykumar?tab=repositories',
       color: 'primary',
     },
     {
       title: 'Human Error Firewall (HEF)',
       description: 'Developed a full-stack cybersecurity system to detect and prevent risky user behavior in web browsing. Built a FastAPI-based risk engine for real-time risk scoring, created a browser extension to detect phishing and block suspicious actions, and implemented an SOC-style dashboard for incident monitoring and workflow management. Project link available on GitHub.',
       tech: ['FastAPI', 'React', 'Browser Extension', 'SQLite', 'Risk Scoring'],
+      githubUrl: 'https://github.com/cybersunnykumar?tab=repositories',
       color: 'secondary',
     },
   ];
@@ -47,7 +49,16 @@ const ProjectsSection = () => {
               <div className="flex items-center justify-between mb-6">
                 <Folder className={`w-10 h-10 ${folderColorClass}`} />
                 <div className="flex items-center gap-3">
-                  <span className="text-xs font-mono text-muted-foreground">Details in description</span>
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-xs font-mono text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <Github className="w-4 h-4" />
+                    View on GitHub
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
                 </div>
               </div>
 
