@@ -14,19 +14,21 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Certifications', href: '#certifications' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', id: 'home' },
+    { name: 'About', id: 'about' },
+    { name: 'Experience', id: 'experience' },
+    { name: 'Projects', id: 'projects' },
+    { name: 'Certifications', id: 'certifications' },
+    { name: 'Contact', id: 'contact' },
   ];
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const navigateToSection = (sectionId: string) => {
+    window.location.hash = `#/${sectionId}`;
+
+    requestAnimationFrame(() => {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    });
+
     setIsOpen(false);
   };
 
@@ -42,10 +44,10 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a
-            href="#home"
+            href="#/home"
             onClick={(e) => {
               e.preventDefault();
-              scrollToSection('#home');
+              navigateToSection('home');
             }}
             className="flex items-center gap-2 group"
           >
@@ -60,10 +62,10 @@ const Navbar = () => {
             {navLinks.map((link) => (
               <a
                 key={link.name}
-                href={link.href}
+                href={`#/${link.id}`}
                 onClick={(e) => {
                   e.preventDefault();
-                  scrollToSection(link.href);
+                  navigateToSection(link.id);
                 }}
                 className="relative text-sm font-medium text-muted-foreground hover:text-primary transition-colors duration-300 group"
               >
@@ -93,10 +95,10 @@ const Navbar = () => {
             {navLinks.map((link, index) => (
               <a
                 key={link.name}
-                href={link.href}
+                href={`#/${link.id}`}
                 onClick={(e) => {
                   e.preventDefault();
-                  scrollToSection(link.href);
+                  navigateToSection(link.id);
                 }}
                 className="text-muted-foreground hover:text-primary transition-colors py-2 px-3 hover:bg-primary/10 rounded"
                 style={{ animationDelay: `${index * 50}ms` }}

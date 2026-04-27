@@ -62,10 +62,13 @@ const HeroSection = () => {
               <span className="relative z-10">Download Resume</span>
             </a>
             <a
-              href="#contact"
+              href="#/contact"
               onClick={(e) => {
                 e.preventDefault();
-                document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+                window.location.hash = '#/contact';
+                requestAnimationFrame(() => {
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                });
               }}
               className="btn-cyber w-full sm:w-auto"
             >
@@ -103,10 +106,13 @@ const HeroSection = () => {
 
       {/* Scroll Indicator */}
       <a
-        href="#about"
+        href="#/about"
         onClick={(e) => {
           e.preventDefault();
-          document.querySelector('#about')?.scrollIntoView({ behavior: 'smooth' });
+          window.location.hash = '#/about';
+          requestAnimationFrame(() => {
+            document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
+          });
         }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors cursor-pointer"
       >
