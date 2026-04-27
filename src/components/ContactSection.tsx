@@ -95,6 +95,30 @@ const ContactSection = () => {
               ))}
             </div>
 
+            <div className="mt-6 pt-6 border-t border-border/50">
+              <p className="text-xs text-muted-foreground font-mono mb-3">quick-links</p>
+              <div className="flex flex-wrap gap-3">
+                <a
+                  href="https://www.linkedin.com/in/sunnykumar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-3 py-2 rounded-md border border-border/50 bg-muted/20 text-card-foreground text-sm hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all"
+                >
+                  <Linkedin className="w-4 h-4" />
+                  LinkedIn Profile
+                </a>
+                <a
+                  href="https://github.com/cybersunnykumar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-3 py-2 rounded-md border border-border/50 bg-muted/20 text-card-foreground text-sm hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all"
+                >
+                  <Github className="w-4 h-4" />
+                  GitHub Profile
+                </a>
+              </div>
+            </div>
+
             {/* Download Resume CTA */}
             <div className="mt-8 pt-6 border-t border-border/50">
               <a

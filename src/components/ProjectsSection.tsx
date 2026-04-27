@@ -48,18 +48,7 @@ const ProjectsSection = () => {
               {/* Header */}
               <div className="flex items-center justify-between mb-6">
                 <Folder className={`w-10 h-10 ${folderColorClass}`} />
-                <div className="flex items-center gap-3">
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-xs font-mono text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    <Github className="w-4 h-4" />
-                    View on GitHub
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </a>
-                </div>
+                <span className="text-xs font-mono text-muted-foreground">Project details</span>
               </div>
 
               {/* Content */}
@@ -84,6 +73,19 @@ const ProjectsSection = () => {
                     {tech}
                   </span>
                 ))}
+              </div>
+
+              <div className="mt-6">
+                <a
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative z-20 inline-flex items-center gap-2 px-3 py-2 rounded-md border border-primary/40 bg-primary/10 text-primary text-xs font-mono hover:bg-primary hover:text-primary-foreground transition-all"
+                >
+                  <Github className="w-4 h-4" />
+                  Open on GitHub
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
               </div>
               </div>
             );
