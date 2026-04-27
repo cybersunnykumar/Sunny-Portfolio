@@ -3,15 +3,15 @@ import { Folder } from 'lucide-react';
 const ProjectsSection = () => {
   const projects = [
     {
-      title: 'Hands-On SOC Experience (Home Lab)',
-      description: 'Built a Wazuh SIEM lab to monitor Windows & Linux endpoints; analyzed alerts using MITRE ATT&CK. Investigated phishing indicators with header analysis and VirusTotal, and practiced Blue Team triage/escalation workflows.',
-      tech: ['Wazuh', 'SIEM', 'MITRE ATT&CK', 'Windows', 'Linux'],
+      title: 'Hands-On SOC Experience (Labs / Home Setup)',
+      description: 'Built a Wazuh SIEM lab to monitor Windows and Linux endpoints and analyzed alerts using MITRE ATT&CK techniques. Detected phishing attempts using email header analysis and VirusTotal lookup, investigated brute-force attempts in Windows logs using Splunk queries, and practiced Blue Team response and escalation workflows.',
+      tech: ['Wazuh', 'Splunk', 'MITRE ATT&CK', 'Windows Logs', 'Blue Team'],
       color: 'primary',
     },
     {
-      title: 'Support Vector Machine Implementation',
-      description: 'Implemented and optimized Support Vector Machine (SVM) models using Python for classification and regression tasks. Utilized Scikit-Learn to preprocess data, tune hyperparameters, and evaluate model performance.',
-      tech: ['Python', 'Scikit-Learn', 'SVM', 'ML'],
+      title: 'Human Error Firewall (HEF)',
+      description: 'Developed a full-stack cybersecurity system to detect and prevent risky user behavior in web browsing. Built a FastAPI-based risk engine for real-time risk scoring, created a browser extension to detect phishing and block suspicious actions, and implemented an SOC-style dashboard for incident monitoring and workflow management. Project link available on GitHub.',
+      tech: ['FastAPI', 'React', 'Browser Extension', 'SQLite', 'Risk Scoring'],
       color: 'secondary',
     },
   ];

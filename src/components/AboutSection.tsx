@@ -3,19 +3,22 @@ import profileImage from '@/assets/WhatsApp Image 2026-02-23 at 2.04.57 PM.jpeg'
 
 const AboutSection = () => {
   const skills = [
+    { name: 'Python', icon: Code2 },
+    { name: 'Nmap', icon: Network },
+    { name: 'Gobuster', icon: Terminal },
+    { name: 'SQLmap', icon: Terminal },
+    { name: 'Metasploit', icon: Bug },
+    { name: 'Hashcat', icon: Terminal },
+    { name: 'Nuclei', icon: Bug },
+    { name: 'Wazuh', icon: Monitor },
+    { name: 'Splunk (Basics)', icon: FileSearch },
     { name: 'Security Monitoring', icon: Monitor },
-    { name: 'Alert Triage', icon: Activity },
-    { name: 'Log Analysis', icon: FileSearch },
+    { name: 'Threat Detection', icon: Activity },
+    { name: 'Threat Hunting', icon: Shield },
     { name: 'Incident Response', icon: Shield },
-    { name: 'Threat Hunting', icon: Bug },
-    { name: 'SIEM (Wazuh)', icon: Terminal },
-    { name: 'Splunk (Basics)', icon: Terminal },
-    { name: 'MITRE ATT&CK', icon: Shield },
-    { name: 'Networking', icon: Network },
-    { name: 'IDS/IPS Concepts', icon: Shield },
+    { name: 'Log Correlation', icon: FileSearch },
     { name: 'Windows', icon: Laptop },
     { name: 'Kali Linux', icon: Terminal },
-    { name: 'Python', icon: Code2 },
   ];
 
   return (
@@ -42,7 +45,7 @@ const AboutSection = () => {
                 <div className="relative w-80 h-80 sm:w-96 sm:h-96 md:w-[30rem] md:h-[30rem] overflow-hidden rounded-3xl">
                   <img
                     src={profileImage}
-                    alt="Sunny Kumar - SOC Analyst (L1)"
+                    alt="Sunny Kumar - Cybersecurity Analyst"
                     className="w-full h-full object-cover object-top"
                   />
                 </div>
@@ -57,16 +60,18 @@ const AboutSection = () => {
               </div>
               <div className="space-y-4 text-card-foreground leading-relaxed">
                 <p>
-                  I’m an <span className="text-primary font-semibold">entry-level SOC Analyst (L1)</span> with hands-on training in
-                  Security Operations Center workflows: alert monitoring, log analysis, incident triage, and documentation.
+                  I&apos;m an <span className="text-primary font-semibold">entry-level Cybersecurity Analyst</span> with hands-on
+                  experience in SOC workflows and penetration testing labs.
                 </p>
                 <p>
-                  I have a strong foundation in <span className="text-secondary font-semibold">networking, Linux, and Windows</span>, and I’m
-                  comfortable working with SIEM tools and basic Splunk queries for investigation and correlation.
+                  I work with tools like <span className="text-secondary font-semibold">Nmap, Gobuster, SQLmap, Metasploit,
+                  Hashcat, Nuclei, Wazuh, and Splunk</span> for vulnerability scanning, network enumeration,
+                  and security monitoring.
                 </p>
                 <p>
-                  I also use <span className="text-primary font-semibold">Python</span> for automation and problem-solving, and I’m focused on
-                  building a career in defensive security operations and Blue Team response.
+                  My core strengths include <span className="text-primary font-semibold">networking, Linux systems, threat
+                  detection, incident response, and ethical hacking fundamentals</span>, and I am focused on
+                  growing in cybersecurity operations.
                 </p>
               </div>
             </div>

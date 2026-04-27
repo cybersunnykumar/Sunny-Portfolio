@@ -3,24 +3,24 @@ import { Briefcase, Calendar, MapPin } from 'lucide-react';
 const ExperienceSection = () => {
   const experiences = [
     {
-      title: 'IBM Intern',
-      company: 'Dataview Analytics',
-      location: 'Remote',
-      period: 'October 2024 – November 2024',
+      title: 'Cybersecurity Intern',
+      company: 'Uptoskills',
+      location: 'Internship Program',
+      period: 'January 2026 - April 2026',
       points: [
-        'Gained hands-on experience with Python, Pandas, NumPy, and Scikit-Learn for data preprocessing and model building',
-        'Worked on classification and regression problems, applying algorithms like SVM and Decision Trees',
-        'Performed data cleaning, feature engineering, and model evaluation to improve accuracy',
-        'Learned industry practices in data analysis, visualization (Matplotlib, Seaborn), and reporting',
+        'Gained hands-on experience in vulnerability assessment and penetration testing.',
+        'Performed network scanning and service enumeration using Nmap and Gobuster.',
+        'Identified web vulnerabilities including SQL injection and security misconfigurations.',
+        'Learned real-world attack methodologies and basic defensive strategies.',
       ],
     },
   ];
 
   const education = {
-    degree: 'M.C.A. (Pursuing)',
-    institution: 'Jaipur National University, Jaipur',
-    year: '2024 - 2026',
-    cgpa: 'In Progress',
+    degree: 'MCA',
+    institution: 'Jaipur National University, Jaipur (Rajasthan)',
+    year: '2024 - Ongoing',
+    cgpa: 'Ongoing',
   };
 
   const previousEducation = {

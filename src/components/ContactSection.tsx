@@ -11,20 +11,20 @@ const ContactSection = () => {
     {
       icon: Github,
       label: 'GitHub',
-      value: 'github.com/sunnykumar8905',
-      href: 'https://github.com/sunnykumar8905',
+      value: 'github.com/cybersunnykumar',
+      href: 'https://github.com/cybersunnykumar',
     },
     {
       icon: Mail,
       label: 'Email',
-      value: 'sunny8905kumar@gmail.com',
-      href: 'mailto:sunny8905kumar@gmail.com',
+      value: 'sunnykumar9173399018@gmail.com',
+      href: 'mailto:sunnykumar9173399018@gmail.com',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/sunny-kumar-a94634275',
-      href: 'https://www.linkedin.com/in/sunny-kumar-a94634275/',
+      value: 'linkedin.com/in/sunnykumar',
+      href: 'https://www.linkedin.com/in/sunnykumar',
     },
     {
       icon: MapPin,
