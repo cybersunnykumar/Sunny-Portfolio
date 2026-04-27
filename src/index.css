@@ -179,6 +179,7 @@
     content: '';
     @apply absolute inset-0 opacity-0 transition-opacity duration-300;
     background: linear-gradient(135deg, hsl(var(--primary) / 0.1) 0%, transparent 50%);
+    pointer-events: none;
   }
 
   .card-cyber:hover::before {
@@ -229,6 +230,7 @@
       linear-gradient(hsl(var(--primary) / 0.03) 1px, transparent 1px),
       linear-gradient(90deg, hsl(var(--primary) / 0.03) 1px, transparent 1px);
     background-size: 50px 50px;
+    pointer-events: none;
   }
 }
 
