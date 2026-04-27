@@ -5,6 +5,13 @@ const HeroSection = () => {
   const emailAddress = 'sunnykumar9173399018@gmail.com';
   const gmailComposeUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(emailAddress)}`;
 
+  const openEmail = () => {
+    const popup = window.open(gmailComposeUrl, '_blank', 'noopener,noreferrer');
+    if (!popup) {
+      window.location.href = gmailComposeUrl;
+    }
+  };
+
   const roles = [
     'Cybersecurity Analyst',
     'SOC Operations',
@@ -99,8 +106,10 @@ const HeroSection = () => {
             </a>
             <a
               href={gmailComposeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={(e) => {
+                e.preventDefault();
+                openEmail();
+              }}
               className="p-3 rounded-lg border border-border/50 bg-muted/30 text-muted-foreground hover:text-primary hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 group"
             >
               <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
