@@ -23,8 +23,8 @@ const ContactSection = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: 'linkedin.com/in/sunnykumar',
-      href: 'https://www.linkedin.com/in/sunnykumar',
+      value: 'linkedin.com/in/cyber-sunnykumar',
+      href: 'https://www.linkedin.com/in/cyber-sunnykumar/',
     },
     {
       icon: MapPin,
@@ -99,7 +99,7 @@ const ContactSection = () => {
               <p className="text-xs text-muted-foreground font-mono mb-3">quick-links</p>
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="https://www.linkedin.com/in/sunnykumar"
+                  href="https://www.linkedin.com/in/cyber-sunnykumar/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-3 py-2 rounded-md border border-border/50 bg-muted/20 text-card-foreground text-sm hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all"
@@ -115,6 +115,13 @@ const ContactSection = () => {
                 >
                   <Github className="w-4 h-4" />
                   GitHub Profile
+                </a>
+                <a
+                  href="mailto:sunnykumar9173399018@gmail.com"
+                  className="inline-flex items-center gap-2 px-3 py-2 rounded-md border border-border/50 bg-muted/20 text-card-foreground text-sm hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all"
+                >
+                  <Mail className="w-4 h-4" />
+                  Email Me
                 </a>
               </div>
             </div>
